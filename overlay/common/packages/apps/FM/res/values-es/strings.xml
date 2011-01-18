@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">FM Radio</string>
+    <string name="tx_app_name">FM Transmisor</string>
+    <string name="preset_delete">Borrar</string>
+    <string name="stat_notif_frequency">FM tuning "<xliff:g id="frequency">%1$s</xliff:g>" MHz</string>
+
+    <string name="sel_band_menu">Selecciona Banda Regional</string>
+    <string name="settings_menu">Ajustes</string>
+    <string name="regional_band">Banda Regional</string>
+
+    <string name="aud_output_mode">Salida de Audio</string>
+    <string name="sel_audio_output">Selecciona salida de Audio</string>
+
+    <string name="record_dur">Duracion de grabación</string>
+    <string name="sel_rec_dur">Selecciona duracion de grabación</string>
+
+    <string name="auto_select_af">Alterna Frequencia</string>
+    <string name="auto_select_af_enabled">Auto Selección Activado</string>
+    <string name="auto_select_af_disabled">Auto Selección Desactivado</string>
+
+    <string name="fac_defaults">Resetear ajustes</string>
+    <string name="revert_to_fac">Resetear ajustes</string>
+    <string name="settings_back">Atras</string>
+
+    <string name="settings_revert_confirm_title">Confirma Reseteo de ajustes</string>
+    <string name="settings_revert_confirm_msg">Esto borrará todos los ajustes incluidos las preselecciones</string>
+
+    <string name="settings_back_summary">Vuelve a la vista previa</string>
+    <string name="settings_revert_defaults_title">Vuelve a los ajustes de serie</string>
+    <string name="settings_revert_defaults_summary">Resetea todos los ajustes</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancela</string>
+
+    <string name="preset_search">Buscar"<xliff:g id="preset_pi">%1$s</xliff:g>"</string>
+
+    <string name="fm_command_failed_title">FM operación fallida</string>
+    <string name="fm_cmd_failed_msg">Operación fallida. Las posibles causas son: tienes conectados los auriculares para que hagan de antena, no has activado el Bluetooth, el telefono esta en una llamada, o FM ha sido cerrado. Por favor conprueba esto y prueba de nuevo.</string>
+
+    <skip/>
+    <!-- Do not translate. Duration format. -->
+    <string name="durationformat"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+
+    <string name="frequency_string"></string>
+    <string name="stat_no_fm">Radio FM no está encendidad</string>
+
+    <!-- Added by LIBRA -->
+    <string name="need_headset_for_antenna">Por favor conecta unos auriculares para que hagan de antena FM.</string>
+    <string name="init_FM">Activando Bluetooth para soporte de radio FM...</string>
+    <string name="need_bluetooth">Por favor activa el Bluetooth</string>
+
+</resources>

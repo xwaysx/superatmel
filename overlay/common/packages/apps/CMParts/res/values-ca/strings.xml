@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Spare Parts</string>
+  <string name="summary_custom_not_bar_off">Ús de la barra de notificació clàssica</string>
+  <string name="summary_custom_exp_not_bar_off">Ús de la barra desplegable clàssica millorada</string>
+</resources>
