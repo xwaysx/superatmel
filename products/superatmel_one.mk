@@ -43,14 +43,14 @@ PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/one/etc/super2/03gps:system/etc/super2/03gps \
 	vendor/superatmel/prebuilt/one/etc/super2/04control:system/etc/super2/04control
 
-PRODUCT_LOCALES := \
-    ca_ES \
-    es_ES \
-    en_US \
-    de_DE \
-    eu_ES \
-    fr_FR \
-    it_IT \
-    mdpi
+#PRODUCT_LOCALES := \
+ #   ca_ES \
+ #   es_ES \
+ #   en_US \
+ #   de_DE \
+ #   eu_ES \
+ #   fr_FR \
+ #   it_IT \
+ #   mdpi
 
 PRODUCT_DEFAULT_LANGUAGE := es_ES

@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES += \
      frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Common SuperMVL overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage5.mk
@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
 	vendor/superatmel/prebuilt/common/media/audio/alarms/Snooze.mp3:system/media/audio/notifications/Snooze.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/ringtones/Old_Phone.mp3:system/media/audio/ringtones/Old_Phone.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/ringtones/Uprising.ogg:system/media/audio/ringtones/Uprising.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/camera_click.ogg:system/media/audio/rui/camera_click.ogg \
+	vendor/superatmel/prebuilt/common/media/audio/ui/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/ui/Lock.ogg:system/media/audio/ui/Lock.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/ui/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/ui/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg \

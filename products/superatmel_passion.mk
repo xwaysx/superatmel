@@ -23,10 +23,11 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
 
 # Extra Passion overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/passion
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/passion
 
 # Incluye aplicaciones
 PRODUCT_PACKAGES += FM \
+   Music3 \
    Stk \
    Torch
 
