@@ -1,0 +1,14 @@
+#!/system/bin/sh
+#
+# Carga modulos extras
+
+echo "Activando Modulos"
+
+MODULES="ipv6"
+
+for i in $MODULES;
+do
+    modprobe $i;
+done
+
+    insmod /system/lib/modules/2.6.29.6-SuperBler/kernel/fs/aufs/aufs.ko;

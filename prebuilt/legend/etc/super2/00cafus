@@ -1,0 +1,17 @@
+#!/system/bin/sh
+#Script Post Instalacion por Super@tmel
+# Script 121
+
+if [ -e /data/cafus ];
+then
+echo 3 > /sys/class/leds/amber/brightness
+echo "Activando aufs";
+aufs --enable
+busybox rm /data/cafus;
+echo "Reinciando en 5 segundos"
+reboot;
+else
+echo "aufs activado";
+sleep 2
+echo 0 > /sys/class/leds/amber/brightness
+fi;

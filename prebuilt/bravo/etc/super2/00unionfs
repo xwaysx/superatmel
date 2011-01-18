@@ -1,0 +1,35 @@
+#!/system/bin/sh
+#
+echo "Activando Overlay"
+echo 3 > /sys/class/leds/green/blink;
+
+MOUNTPOINT=/data/local/mnt
+SYSTEM_RW=$MOUNTPOINT/system_rw
+SYSTEM_RO=$MOUNTPOINT/system_ro
+SYSTEM_UNION=$MOUNTPOINT/system_union
+UNIONFS=$SYSTEM_RO/xbin/unionfs
+
+	# Cargando modulo fuse
+	insmod /system/lib/modules/`uname -r`/kernel/fs/fuse/fuse.ko;
+
+sleep 3
+	
+for i in $MOUNTPOINT $SYSTEM_RW $SYSTEM_RO $SYSTEM_UNION;
+do
+    busybox2 mkdir -p $i
+done
+
+busybox2 mount --move /system $SYSTEM_RO;
+$UNIONFS -o cow,max_files=32768,allow_other,suid,nonempty $SYSTEM_RW=RW:$SYSTEM_RO=RO $SYSTEM_UNION;
+$SYSTEM_RO/xbin/busybox2 mount --bind $SYSTEM_UNION /system;
+
+unset i
+unset UNIONFS
+unset MOUNTPOINT
+unset SYSTEM_RW
+unset SYSTEM_RO
+unset SYSTEM_UNION
+
+echo 0 > /sys/class/leds/green/blink;
+echo "+++ UnionFS-fuse activado";
+
