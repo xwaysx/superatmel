@@ -48,3 +48,5 @@ on property:persist.service.supmar=1
 
 on property:persist.service.supmar=0
     start supmar_off
+
+

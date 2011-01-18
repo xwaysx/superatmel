@@ -26,7 +26,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/z71
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Boston-1
+    ro.modversion=SuperBler-MVZ-Boston-4
 
 PRODUCT_COPY_FILES +=  \
         vendor/superatmel/prebuilt/z71/etc/super/04modulos:system/etc/super/04modulos \

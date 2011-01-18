@@ -40,7 +40,7 @@ WITH_WINDOWS_MEDIA := true
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Desire-1
+    ro.modversion=SuperBler-MVZ-Desi-4
 
 #
 # Copy Passion specific prebuilt files

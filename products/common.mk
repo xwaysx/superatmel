@@ -6,7 +6,7 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGES += ADWLauncher
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Uprising.ogg
+    ro.config.ringtone=Old_Phone.mp3 \
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -24,34 +24,31 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.enterprise_mode=1
+    ro.setupwizard.enterprise_mode=1 \
+    ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=supermvl \
-    ro.sup.superteam
+    ro.rommanager.developerid=superbler
 
 # SuperBler specific product packages
 PRODUCT_PACKAGES += \
-    AndroidTerm \
-    FileManager \
-    LatinIME \
-    openvpn \
-    SpareParts2 \
-    Wallpapers \
     Parts \
+    Gallery3D \
+    FileManager \
+    CMPartsHelper \
     DSPManager \
-    libcyanogen-dsp \
-    CMPartsHelper
+    Superuser \
+    Stk \
+    LatinIME \
+    Wallpapers
 
-# Activa Voip
-PRODUCT_COPY_FILES += \
-     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Common SuperMVL overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
+# Common SuperBler overlay
+#PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
+#PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayverde/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/common
 
 # Bring in some audio files
-include frameworks/base/data/sounds/AudioPackage5.mk
+include frameworks/base/data/sounds/AudioPackage4.mk
 
 PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
@@ -86,11 +83,13 @@ PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/superatmel/prebuilt/common/xbin/htop:system/xbin/htop \
     vendor/superatmel/prebuilt/common/xbin/irssi:system/xbin/irssi \
+    vendor/superatmel/prebuilt/common/xbin/lsof:system/xbin/lsof \
     vendor/superatmel/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/superatmel/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh 
 
 # Sonido para la rom
 PRODUCT_COPY_FILES += \
+	vendor/superatmel/prebuilt/common/media/audio/ringtones/Old_Phone.mp3:system/media/audio/ringtones/Old_Phone.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/Zing.mp3:system/media/audio/notifications/Zing.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/codeccall.ogg:system/media/audio/notifications/codecall.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/eXcitement.ogg:system/media/audio/notifications/eXcitement.ogg \
@@ -99,10 +98,5 @@ PRODUCT_COPY_FILES += \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/Spacious.ogg:system/media/audio/notifications/Spacious.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/alarms/Beeps.mp3:system/media/audio/notifications/Beeps.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/alarms/Snooze.mp3:system/media/audio/notifications/Snooze.mp3 \
-	vendor/superatmel/prebuilt/common/media/audio/ringtones/Old_Phone.mp3:system/media/audio/ringtones/Old_Phone.mp3 \
-	vendor/superatmel/prebuilt/common/media/audio/ringtones/Uprising.ogg:system/media/audio/ringtones/Uprising.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/camera_click.ogg:system/media/audio/ui/camera_click.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/Lock.ogg:system/media/audio/ui/Lock.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/VideoRecord.ogg:system/media/audio/ui/VideoRecord.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/ui/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg
+	vendor/superatmel/prebuilt/common/media/audio/ui/Lock.ogg::system/media/audio/ui/Lock.ogg \
+	vendor/superatmel/prebuilt/common/media/audio/ui/Unlock.ogg::system/media/audio//ui/Unlock.ogg

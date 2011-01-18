@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2007 The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- New incoming call vibrate options. -->
+    <string-array name="vibrate_entries">
+        <item>Siempre</item>
+        <item>Nunca</item>
+        <item>Solo si esta en modo silencio</item>
+        <item>Solo cuando no esta en modo silencio</item>
+    </string-array>
+
+    <!-- Values for vibrate_entries matching constants in SoundSettings. Do not translate. -->
+    <string-array name="vibrate_values" translatable="false">
+        <item>Siempre</item>
+        <item>Nunca</item>
+        <item>Silencio</item>
+        <item>No silencio</item>
+    </string-array>
+    
+    <string-array name="brightnessWidget" translatable="false">
+        <item>Auto/0%/40%/100%</item>
+        <item>Auto/0%/25%/75%/100%</item>
+        <item>Auto/25%/100%</item>
+    </string-array>
+
+    <string-array name="networkModesWidget" translatable="false">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Solo</item>
+        <item>2G/3G Solo/3G+2G</item>
+    </string-array>
+    
+    <string-array name="screenTimeoutWidget" translatable="false">
+        <item>15s/1m/5m</item>
+        <item>30s/2m/5m</item>
+    </string-array>
+
+    <string-array name="ringModeWidget" translatable="false">
+        <item>Sonido+Vibración/Vibración</item>
+        <item>Sonido/Vibración</item>
+        <item>Sonido/Silencio</item>
+        <item>Sonido+Vib/Vib/Silencio</item>
+        <item>Sonido/Vibración/Silencio</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Antorcha</string>
+    <string name="about">Acerca: </string>
+    <string name="description">Este programa utiliza el LED de la camara.\n</string>
+    <string name="warning">Peligro: Dejar el LED durante mucho tiempo encendido, podría recalentarse.\n\nMaximo brillo \'siempre encendido\' ha sido testado durante 1/2 hora, pero existe el riego de dañar el LED.\n</string>
+    <string name="license">Código original de Antorcha para Nexus One por Ben BuxtonLiberado bajo GPL, v3.\nhttp://n1torch.googlecode.com/\n\nGracias a David Prieto por el nuevo diseño.\n\nContacto: bbuxton@gmail.com\n\n20/6/2010</string>
+
+    <string name="warning_label">Peligro</string>
+    <string name="brightwarn">El brillo completo ha sido probado con éxito durante 1/2 hora de funcionamiento, pero tiene bastante calor, y empezó a parpadear (temporalmente) a los 45 minutos. Los efectos a largo plazo se desconocen.\n\nEsto no es compatible con el Widget.\n\nClick \'Acepta\' usalo bajo tu propio riesgo.</string>
+
+    <string name="label_on">On</string>
+    <string name="label_off">Off</string>
+    <string name="label_high">Alto brillo</string>
+    <string name="label_strobe">Ráfaga</string>
+    <string name="label_frequency">Frequencia: (desliza para cambiar)</string>
+    <string name="label_info">\'Menu\' para info.</string>
+
+    <string name="setting_frequency_title">Frecuencia ráfaga</string>
+    <string name="setting_frequency_summary">Frequencia de ráfaga</string>
+    <string name="setting_frequency_dialog">Frequencia</string>
+    <string name="setting_frequency_hz"> Hz</string>
+    <string name="setting_add_widget">Añadir widget</string>
+
+    <string name="widget_label">Flash</string>
+</resources>

@@ -187,7 +187,6 @@ fi
 # Renombrado Gallery dependiendo del dispositivo que sea
 if [ "$G3D" -eq 1 ]; then
 	mv $REPACK/ota/system/app/Gallery.apk $REPACK/ota/system/app/Gallery.app
-	echo " "
 	echo " Activado Gallery 3D y desactivado Gallery 2D"
 	echo " "
 else
@@ -269,9 +268,9 @@ rm -rf $REPACK/ota/recovery
 find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
 
 # Determinar como se llamará el paquete firmado
-MODVERSION=`sed -n -e'/ro\.modversion/s/^.*SuperGinger-//p' $REPACK/ota/system/build.prop`
-: ${MODVERSION:=test}
-OUTFILE=$OUT/SuperGinger-$MODVERSION.zip
+MODVERSION=`sed -n -e'/ro\.modversion/s/^.*SuperBler-//p' $REPACK/ota/system/build.prop`
+: ${MODVERSION:=nightly}
+OUTFILE=$OUT/SuperBler-$MODVERSION.zip
 
 # Empaquetar y firmar
 printf "Comprimiendo..."

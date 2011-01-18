@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="bluetooth_quick_toggle_title" msgid="1037056952714061893">"Bluetooth"</string>
+    <string name="bluetooth_quick_toggle_summary" msgid="5293641680139873341">"Activar Bluetooth"</string>
+    <string name="bluetooth_settings" msgid="2725796451253089609">"Bluetooth"</string>
+    <string name="bluetooth_settings_title" msgid="2824020086246268296">"Ajustes de Bluetooth"</string>
+
+
+    <string name="permission_settings_title">Muestra permisos</string>
+    <string name="lockpattern_settings_show_custom_msg">Muestra un mensaje personalizado</string>
+    <string name="lockpattern_settings_custom_msg">Mensaje personalizado</string>
+    <string name="lockpattern_settings_custom_msg_dialog">Teclea un mensaje</string>
+    <string name="lockpattern_settings_custom_msg_color">Color de mensaje</string>
+    <string name="permission_settings_summary">Muestra una lista de permisos y que aplicaciones los estan usando</string>
+    <string name="possibleButtons">Posibles botones</string>
+    <string name="toggleWifi">Wifi</string>
+    <string name="toggleWifiAp">Wi-Fi Hotspot</string>
+    <string name="toggleBluetooth">Bluetooth</string>
+    <string name="toggleGPS">GPS</string>
+    <string name="toggleData">Datos Móviles</string>
+    <string name="toggleSync">Sinc. de Datos</string>
+    <string name="toggle2g3g">2G/3G</string>
+    <string name="toggleSound">Sonido</string>
+    <string name="toggleBrightness">Brillo</string>
+    <string name="toggleAutoRotate">Orientación</string>
+    <string name="toggleScreenTimeout">Pantalla en espera</string>
+    <string name="toggleAirplane">Modo vuelo</string>
+    <string name="toggleFlashlight">Flash</string>
+    <string name="toggleLockScreen">Bloqueo</string>
+
+    <string name="toggleWifiDescription">Activa/Desactiva Wifi</string>
+    <string name="toggleWifiApDescription">Activa/Desactiva el WI-FI hotspot</string>
+    <string name="toggleBluetoothDescription">Activa/Desactiva Bluetooth</string>
+    <string name="toggleGPSDescription">Activa/Desactiva GPS</string>
+    <string name="toggleDataDescription">Activa/Desactiva datos móviles</string>
+    <string name="toggleSyncDescription">Activa/Desactiva sincronización de datos</string>
+    <string name="toggle2g3gDescription">Cambia estre 2G y 3G</string>
+    <string name="toggleSoundDescription">Cambia entre ring y vibración solo</string>
+    <string name="toggleBrightnessDescription">Cambia los nveles de brillo</string>
+    <string name="toggleAutoRotateDescription">Activa/Desactiva sensor de orientación</string>
+    <string name="toggleScreenTimeoutDescription">Elije diferentes tiempos para apagar pantalla</string>
+    <string name="toggleAirplaneDescription">Activa/Desactiva modo avión</string>
+    <string name="toggleFlashlightDescription">Activa/Desactiva modo flash</string>
+    <string name="toggleLockScreenDescription">Activa/Desactiva bloqueo de pantalla</string>
+
+    <string name="widgetSettings">Configuración de Widgets</string>
+    <string name="wifiSettings">Ajustes eventos de Wi-Fi</string>
+    <string name="dataSettings">Ajustes eventos de datos</string>
+    <string name="powerSettings">Ajustes eventos de Power</string>
+    
+    <string name="generalSettings">Ajustes Generales</string>
+
+    <string name="autoDisable3G">Datos desac. 3G</string>
+    <string name="autoEnable3G">Datos activ. 3G</string>
+    <string name="autoDisable3GWithWifi">Wi-Fi desac. 3G</string>
+    <string name="autoEnable3GWithWifi">Wi-Fi activ. 3G</string>
+    <string name="useRoundCorners">Esquinas redondeadas</string>
+    <string name="useVertical">Modo vertical</string>
+    <string name="useTransparent">Widgets transparentes</string>
+    <string name="autoEnableSyncWithWifi">Wi-Fi activ. Sync</string>
+    <string name="autoDisableSyncWithWifi">Wi-Fi desac. Sync</string>
+    <string name="ringModeVibrateAsOn">Vibración encendida</string>
+    <string name="monitorDataRoaming">Monitor de datos en roaming</string>
+    <string name="autoEnableBluetoothWithPower">Ext. PWR activ. Bluetooth</string>
+    <string name="autoDisableBluetoothWithPower">Ext. PWD desac. Bluetooth</string>
+    <string name="autoEnableWifiWithPower">Ext. PWD activ. Wi-Fi</string>
+    <string name="autoDisableWifiWithPower">Ext. PWD desac. Wi-Fi</string>
+
+    <string name="autoDisable3GDescription">2G cuando los datos móviles estan desac,</string>
+    <string name="autoEnable3GDescription">3G cuando los datos móviles estan activ,</string>
+    <string name="autoDisable3GWithWifiDescription">2G cuando Wi-Fi esta activ.</string>
+    <string name="autoEnable3GWithWifiDescription">3G cuando Wi-Fi esta desac.</string>
+    <string name="useRoundCornersDescription">Usa iconos con esquinas redondeadas</string>
+    <string name="useTransparentDescription">Sin fondo en el widget</string>
+    <string name="useVerticalDescription">Muestra con horientación vertical</string>
+    <string name="autoEnableSyncWithWifiDescription">Activa Sync cuando el WIFI esta activado</string>
+    <string name="autoDisableSyncWithWifiDescription">Desactiva Sync cuando el WIFI esta desactivado</string>
+    <string name="ringModeVibrateAsOnDescription">Sonido solo cuando este en modo vibración</string>
+    <string name="monitorDataRoamingDescription">Barra roja de datos en roaming</string>
+    <string name="autoEnableBluetoothWithPowerDescription">Bluetooth activ. cuando esté conectado</string>
+    <string name="autoDisableBluetoothWithPowerDescription">Bluetooth desac. cuando esté desconectado</string>
+    <string name="autoEnableWifiWithPowerDescription">Wi-Fi activ. cuando esté conectado</string>
+    <string name="autoDisableWifiWithPowerDescription">Wi-Fi desac. cuando esté desconectado</string>
+
+    <string name="networkModeSpinner">Escoje modo de red</string>
+    <string name="brightnessSpinner">Escoje niveles de brillo</string>
+    <string name="ringModeSpinner">Escoje modo de sonidos</string>
+    <string name="screenTimeoutSpinner">Escoje tiempo de pantalla en espera</string>
+    <string name="backgroundImageSpinner">Escoje fondo</string> 
+    
+    <!-- Proxy settings -->
+    <string name="proxy_setting">Ajustes de Proxy</string>
+    <string name="proxy_setting_summary">Configura un proxy para acceder a internet</string>
+    <string name="proxy_wifi_on">Usa el proxy en wifi</string>
+    
+    <string name="notConfigured">No Configurado</string>
+
+    <string name="adb_notify">Notificador depurador USB</string>
+    <!-- Setting checkbox summary for displaying USB debugging notification -->
+    <string name="adb_notify_summary">Muestra una notificación cuando el depurador de USB esté conectado</string>
+
+    <string name="kill_app_longpress_back">Mata app manteniendo pulsado</string>
+    <!-- Setting checkbox summary whether to allow killing foreground app by longpress on BACK. -->
+    <string name="kill_app_longpress_back_summary">Manteniendo pulsado el botón atras matará la aplicación en primer plano.</string>
+
+    <string name="notification_blink_title">Luz de notificación</string>
+    <!-- Display settings screen, notification light repeat blinking summary -->
+    <string name="notification_blink_summary">Parpadea el led verde en notificaciones repetidamente</string>
+    <!-- Display settings screen, notification light always on title -->
+    <string name="notification_always_on_title">Siempre la luz de notificaciones</string>
+    <!-- Display settings screen, notification light always on summary -->
+    <string name="notification_always_on_summary">Activa la luz de notificaciones mientras la pantalla esta encendida</string>
+    <!-- Display settings screen, notification light while charging title -->
+    <string name="notification_charging_title">Luz de carga</string>
+    <!-- Display settings screen, notification light while charging summary -->
+    <string name="notification_charging_summary">Activa la luz naranja mientras carga</string>
+    <!-- Sound settings screen, setting option name checkbox -->
+    <string name="volume_control_silent_title">Estado de silencio</string>
+    <!-- Sound settings screen, setting option summary text -->
+    <string name="volume_control_silent_summary">Añadir un completo estado de silencio para controlar el volumen</string>
+</resources>

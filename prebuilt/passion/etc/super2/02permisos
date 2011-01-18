@@ -1,8 +1,8 @@
 #!/system/bin/sh
 
-echo "Tiempo 110 segundos para Nexus One"
+echo "Tiempo 90 segundos para Nexus One"
 echo 3 > /sys/class/leds/blue/blink;
-sleep 110:
+sleep 90:
 rwsystem
 busybox sh /system/bin/fix_permissions;
 echo "Reorganizando"
