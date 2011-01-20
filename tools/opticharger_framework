@@ -35,6 +35,7 @@ TMPDIR=/tmp/opticharge-$$
 FRAME_IMG_MDPI=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi/*
 FRAME_IMG_HDPI=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_hdpi/*
 #FRAME_IMG_HDPI_AZUL=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_hdpi_azul/*
+FRAME_ANIM_HDPI=$ANDROID_BUILD_TOP/vendor/superatmel/mods/anim/*
 FRAME_IMG_MDPI_AZUL=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi_azul/*
 FRAME_IMG_MDPI_ONE=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi_one/*
 
@@ -114,7 +115,8 @@ then
 	 cp -rf $FRAME_IMG_MDPI_AZUL res/drawable-mdpi/
     else
 	 cp -rf $FRAME_IMG_HDPI res/drawable-hdpi/
-	# cp -rf $FRAME_IMG_HDPI_AZUL res/drawable-hdpi/
+       # cp -rf $FRAME_IMG_HDPI_AZUL res/drawable-hdpi/
+	 cp -rf $FRAME_ANIM_HDPI res/anim/
     fi
 
 case "$TARGET_PRODUCT" in
