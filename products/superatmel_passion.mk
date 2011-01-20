@@ -27,7 +27,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/passion
 
 # Incluye aplicaciones
 PRODUCT_PACKAGES += FM \
-   Music3 \
    Stk \
    Torch
 
@@ -41,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Nexus-1
+    ro.modversion=SuperGinger-SBC-Nexus-2
 
 #
 # Copy Passion specific prebuilt files
