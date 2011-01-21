@@ -18,7 +18,7 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=tmobile/opal/sapphire/sapphire:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="opal-user 2.2.1 FRG83 60505 release-keys"
 
 # Extra Dream/Sapphire overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/dream_sapphire
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/dream_sapphire
 
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperBler-MVZ-MD-4
+    ro.modversion=SuperGinger-V.2
 
 # Use the audio profile hack
 WITH_DS_HTCACOUSTIC_HACK := true
@@ -61,14 +61,14 @@ PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.klus:system/usr/keylayout/trout-keypad-v3.klus \
 	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.kleu:system/usr/keylayout/trout-keypad-v3.kl
 
-PRODUCT_LOCALES := \
-    ca_ES \
-    es_ES \
-    en_US \
-    de_DE \
-    eu_ES \
-    fr_FR \
-    it_IT \
-    mdpi
+#PRODUCT_LOCALES := \
+#    ca_ES \
+#    es_ES \
+#    en_US \
+#    de_DE \
+#    eu_ES \
+#    fr_FR \
+#    it_IT \
+#    mdpi
 
 PRODUCT_DEFAULT_LANGUAGE := es_ES
