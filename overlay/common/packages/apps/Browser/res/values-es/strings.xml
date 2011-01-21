@@ -20,5 +20,10 @@
     <string name="pref_full_screen_mode">Pantalla completa</string>
     <string name="incog_tab">Activa modo privado</string>
     <string name="dis_incog_tab">Desactiva modo privado</string>
+    <string name="pref_select_user_agent">Tipo de navegador</string>
+    <!-- Settings label -->
+    <string name="pref_content_invert_color">Invierte color</string>
+    <!-- Settings summary -->
+    <string name="pref_content_invert_color_summary">Muestra las paginas con el color invertido</string>
 
 </resources>
