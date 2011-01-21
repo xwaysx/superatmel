@@ -59,16 +59,17 @@ PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keychars/trout-keypad-v3.kcm.bineu:system/usr/keychars/trout-keypad-v3.kcm.bin \
 	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.kleu:system/usr/keylayout/trout-keypad-v3.kleu \
 	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.klus:system/usr/keylayout/trout-keypad-v3.klus \
-	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.kleu:system/usr/keylayout/trout-keypad-v3.kl
+	vendor/superatmel/prebuilt/dream_sapphire/system/usr/keylayout/trout-keypad-v3.kleu:system/usr/keylayout/trout-keypad-v3.kl \
+	vendor/superatmel/prebuilt/dream_sapphire/system/lib/modules/wlan.ko:system/lib/modules/wlan.ko
 
-#PRODUCT_LOCALES := \
-#    ca_ES \
-#    es_ES \
-#    en_US \
-#    de_DE \
-#    eu_ES \
-#    fr_FR \
-#    it_IT \
-#    mdpi
+PRODUCT_LOCALES := \
+    ca_ES \
+    es_ES \
+    en_US \
+    de_DE \
+    eu_ES \
+    fr_FR \
+    it_IT \
+    mdpi
 
 PRODUCT_DEFAULT_LANGUAGE := es_ES

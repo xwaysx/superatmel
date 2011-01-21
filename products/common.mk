@@ -37,11 +37,12 @@ PRODUCT_PACKAGES += \
     LatinIME \
     openvpn \
     SpareParts2 \
-    Wallpapers \
     Parts \
     DSPManager \
     libcyanogen-dsp \
     CMPartsHelper
+
+ #   Wallpapers \
 
 # Activa Voip
 PRODUCT_COPY_FILES += \
@@ -51,7 +52,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
 
 # Bring in some audio files
-include frameworks/base/data/sounds/AudioPackage5.mk
+include frameworks/base/data/sounds/super.mk
 
 PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
