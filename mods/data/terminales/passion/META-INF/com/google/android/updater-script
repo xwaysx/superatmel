@@ -154,7 +154,6 @@ run_program("/tmp/verify_cache_partition_size.sh");
 ui_print(" ");
 
 ui_print("Instalando aplicaciones Extras");
-format("yaffs2", "MTD", "userdata");
 mount("yaffs2", "MTD", "userdata", "/data");
 ui_print(" ");
 
