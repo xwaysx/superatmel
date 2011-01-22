@@ -40,9 +40,8 @@ PRODUCT_PACKAGES += \
     Parts \
     DSPManager \
     libcyanogen-dsp \
-    CMPartsHelper
-
- #   Wallpapers \
+    CMPartsHelper \
+    Wallpapers \
 
 # Activa Voip
 PRODUCT_COPY_FILES += \
@@ -52,7 +51,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
 
 # Bring in some audio files
-include frameworks/base/data/sounds/super.mk
+#include frameworks/base/data/sounds/super.mk
+include frameworks/base/data/sounds/AudioPackage5.mk
+
+# T-Mobile theme engine
+include vendor/cyanogen/products/themes.mk
 
 PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
