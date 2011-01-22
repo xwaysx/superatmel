@@ -34,7 +34,8 @@ PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/hero/etc/super2/01launcher:system/etc/super2/01launcher \
 	vendor/superatmel/prebuilt/hero/etc/super2/02permisos:system/etc/super2/02permisos \
 	vendor/superatmel/prebuilt/hero/etc/super2/03gps:system/etc/super2/03gps \
-	vendor/superatmel/prebuilt/hero/etc/super2/04control:system/etc/super2/04control
+	vendor/superatmel/prebuilt/hero/etc/super2/04control:system/etc/super2/04control \
+	vendor/superatmel/prebuilt/hero/etc/wifi/Fw1251r1c.bin:system/etc/wifi/Fw1251r1c.bin
 
 PRODUCT_LOCALES := \
     ca_ES \
