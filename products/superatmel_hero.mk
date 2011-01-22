@@ -25,7 +25,8 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superbler_hero_defconfig
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=SuperTeam-SBC-Hero-1
+	ro.modversion=SuperTeam-SBC-Hero-1 \
+	ro.opengles.version=165537
 
 # Copy specific prebuilt files
 #
