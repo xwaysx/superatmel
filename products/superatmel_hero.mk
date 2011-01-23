@@ -9,14 +9,14 @@ PRODUCT_BRAND := htc
 PRODUCT_DEVICE := hero
 PRODUCT_MODEL := Hero
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
-PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/superatmel/prelink-linux-arm-hero.map
+# PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/superatmel/prelink-linux-arm-hero.map
 
 WITH_WINDOWS_MEDIA := true
 
 # Extra Passion overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/hero
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/hero
 
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -25,7 +25,8 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superbler_hero_defconfig
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=SuperBler-MVZ-Hero-4
+	ro.modversion=SuperTeam-SBC-Hero-1 \
+	ro.opengles.version=165537
 
 # Copy specific prebuilt files
 #
@@ -34,7 +35,8 @@ PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/hero/etc/super2/01launcher:system/etc/super2/01launcher \
 	vendor/superatmel/prebuilt/hero/etc/super2/02permisos:system/etc/super2/02permisos \
 	vendor/superatmel/prebuilt/hero/etc/super2/03gps:system/etc/super2/03gps \
-	vendor/superatmel/prebuilt/hero/etc/super2/04control:system/etc/super2/04control
+	vendor/superatmel/prebuilt/hero/etc/super2/04control:system/etc/super2/04control \
+	vendor/superatmel/prebuilt/hero/etc/wifi/Fw1251r1c.bin:system/etc/wifi/Fw1251r1c.bin
 
 PRODUCT_LOCALES := \
     ca_ES \
