@@ -5,19 +5,11 @@ PRODUCT_DEVICE := generic
 
 PRODUCT_PACKAGES += ADWLauncher
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Uprising.ogg
-
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
 
 # Tiny toolbox
 TINY_TOOLBOX:=true
-
-# Enable Windows Media if supported by the board
-WITH_WINDOWS_MEDIA:=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -50,12 +42,8 @@ PRODUCT_COPY_FILES += \
 # Common SuperMVL overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/common
 
-# Bring in some audio files
-#include frameworks/base/data/sounds/super.mk
-include frameworks/base/data/sounds/AudioPackage5.mk
-
 # T-Mobile theme engine
-include vendor/cyanogen/products/themes.mk
+include vendor/superatmel/products/themes_common.mk
 
 PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/bin/verify_cache_partition_size.sh:system/bin/verify_cache_partition_size.sh \
@@ -101,6 +89,7 @@ PRODUCT_COPY_FILES += \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/GOTMAIL.ogg:system/media/audio/notifications/GOTMAIL.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/icq_message.ogg:system/media/audio/notifications/icq_message.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/Spacious.ogg:system/media/audio/notifications/Spacious.ogg \
+	vendor/superatmel/prebuilt/common/media/audio/notifications/regulus.ogg:system/media/audio/notifications/regulus.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/alarms/Beeps.mp3:system/media/audio/notifications/Beeps.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/alarms/Snooze.mp3:system/media/audio/notifications/Snooze.mp3 \
 	vendor/superatmel/prebuilt/common/media/audio/ringtones/Old_Phone.mp3:system/media/audio/ringtones/Old_Phone.mp3 \

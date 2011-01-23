@@ -19,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion BUILD_ID=FRG83D BUILD_DISPL
 
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
-PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=cm-kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_mahimahi_defconfig
 
 # Extra Passion overlay
@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Nexus-2
+    ro.modversion=SuperGinger-SBC-Nexus-2.1
 
 #
 # Copy Passion specific prebuilt files
