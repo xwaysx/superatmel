@@ -3,6 +3,32 @@
     <!-- Generic -->
     <string name="app_name">Spare Parts</string>
 
+    <!--  Primary Screen Settings -->
+    <string name="application_settings_title_head">Applicaciones</string>
+    <string name="application_settings_title_subhead">Ajustes de aplicaciones</string>
+    <string name="application_settings_summary_head">Mover aplicaciones, lugar de instalacion</string>
+    <string name="display_settings_title_head">Pantall</string>
+    <string name="display_settings_title_subhead">Ajustes de pantalla</string>
+    <string name="display_settings_summary_head">Animaciones de pantalla, rotacion, tiempos</string>
+    <string name="input_settings_title_head">Entrada</string>
+    <string name="input_settings_title_subhead">Ajustes de entrada</string>
+    <string name="input_settings_summary_head">Comportamiento, botones, haptic feedback</string>
+    <string name="interface_settings_title_head">Interface</string>
+    <string name="interface_settings_title_subhead">Ajustes de interface</string>
+    <string name="interface_settings_summary_head">Ajustes de interface, overscrolli, efectos</string>
+    <string name="lockscreen_settings_title_head">Lockscreen</string>
+    <string name="lockscreen_settings_title_subhead">Ajustes de lockscreen</string>
+    <string name="lockscreen_settings_summary_head">Gestos de lockscreen, stilo, opciones de desbloqueo</string>
+    <string name="performance_settings_title_head">Rendimiento</string>
+    <string name="performance_settings_title_subhead">Ajustes de rendimiento</string>
+    <string name="performance_settings_summary_head">Ajustes de rendimiento, JIT, Memoria virtual</string>
+    <string name="sound_settings_title_head">Sonido</string>
+    <string name="sound_settings_title_subhead">Ajustes de sonidos</string>
+    <string name="sound_settings_summary_head">Volumen de sonido, audio foco, horas de silencio</string>
+    <string name="system_settings_title_head">Sistema</string>
+    <string name="system_settings_title_subhead">Configuración de sistema</string>
+    <string name="system_settings_summary_head">Sistema, stats, notificaciones</string>
+
     <!-- User interface -->
     <string name="ui_title">Interfaz de usuario</string>
     <string name="ui_summary">Ajustes de la interfaz de usuario</string>
