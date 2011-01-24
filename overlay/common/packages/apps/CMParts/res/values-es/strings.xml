@@ -7,7 +7,7 @@
     <string name="application_settings_title_head">Applicaciones</string>
     <string name="application_settings_title_subhead">Ajustes de aplicaciones</string>
     <string name="application_settings_summary_head">Mover aplicaciones, lugar de instalacion</string>
-    <string name="display_settings_title_head">Pantall</string>
+    <string name="display_settings_title_head">Pantalla</string>
     <string name="display_settings_title_subhead">Ajustes de pantalla</string>
     <string name="display_settings_summary_head">Animaciones de pantalla, rotacion, tiempos</string>
     <string name="input_settings_title_head">Entrada</string>
