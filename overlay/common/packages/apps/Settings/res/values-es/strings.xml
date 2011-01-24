@@ -104,8 +104,12 @@
     <string name="cpu_info">Información de CPU</string>
     <!-- About phone screen, status item label -->
     <string name="mem_info">Información de memoria</string>
-    <!-- Wireless controls settings screen, setting label -->
-    <string name="device_hostname">Nombre hostname</string>
+    <!-- Hostname Settings -->
+    <!-- Button when saving a device hostname -->
+    <string name="device_hostname">Nombre dispositivo Wifi</string>
+    <string name="hostname_save">Establece nombre</string>
+    <!-- Button when cancelling hostname change -->
+    <string name="hostname_cancel">Cancela</string>
     <string name="adb_notify">Notificador USB debugger</string>
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify_summary">Muestra una notificación cuando el USB debugger sea conectado</string>
