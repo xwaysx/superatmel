@@ -2,7 +2,7 @@
 $(call inherit-product, device/htc/dream_sapphire/full_dream_sapphire.mk)
 
 # Inherit some common superatmel stuff.
-$(call inherit-product, vendor/superatmel/products/common.mk)
+$(call inherit-product, vendor/superatmel/products/common_small.mk)
 
 # Include GSM stuff
 $(call inherit-product, vendor/superatmel/products/gsm.mk)
