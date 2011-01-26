@@ -11,4 +11,4 @@ do
     modprobe $i;
 done
 
-    insmod /system/lib/modules/2.6.29.6-SuperBler/kernel/fs/aufs/aufs.ko;
+    insmod /system/lib/modules/aufs.ko;
