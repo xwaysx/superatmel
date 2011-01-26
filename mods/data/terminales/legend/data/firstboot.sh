@@ -42,6 +42,16 @@ sleep 2
 busybox chmod 0644 /data/app/com.SupSetupv16-1.apk;
 busybox chown system.system /data/app/com.SupSetupv16-1.apk;
 
+if [ -d "/sdcard/Android/data/com.cooliris.media" ]; then
+    busybox rm -r "/sdcard/Android/data/com.cooliris.media"
+fi
+
+if [ -d "/sdcard/DCIM/.thumbnails" ]; then
+    busybox rm -r "/sdcard/DCIM/.thumbnails"
+fi
+
+busybox find /sdcard/ -type d -name ".thumbnails" -exec rm -rf {} \;
+
 echo "+++ Acabando"
 if [ -e /data/firstboot.sh ];
     then
