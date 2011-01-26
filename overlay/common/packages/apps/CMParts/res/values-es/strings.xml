@@ -28,6 +28,7 @@
     <string name="system_settings_title_head">Sistema</string>
     <string name="system_settings_title_subhead">Configuración de sistema</string>
     <string name="system_settings_summary_head">Sistema, stats, notificaciones</string>
+    <string name="buttons_title">Botones</string>
 
     <!-- User interface -->
     <string name="ui_title">Interfaz de usuario</string>
