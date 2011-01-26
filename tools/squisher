@@ -140,10 +140,8 @@ echo
 mkdir $REPACK/ota/data
 if [ "$MDPI" -eq 1 ]; then
 	cp -rf $MOD_MDPI $REPACK/ota/
-#	cp -rf $MOD_DATA/launchermdpi/* $REPACK/ota/data/
 else
 	cp -rf $MOD_HDPI $REPACK/ota/
-#	cp -rf $MOD_DATA/launcherhdpi/* $REPACK/ota/data/
 fi
 
 # Copiado de archivos base data
@@ -165,8 +163,6 @@ if [ "$ONE" -eq 1 ]; then
 	cp -rf $SPLASH/one/splash.img $REPACK/ota/
 	rm -rf $REPACK/ota/data/extra/com.koushikdutta.rommanager.apk
 	mv  $REPACK/ota/system/app/Maps.apk $REPACK/ota/data/app/com.android.apps.maps.apk
-	cp  -r $REPACK/ota/system/media $REPACK/ota/data/
-	rm  -r $REPACK/ota/system/media
 else
 	echo " "
 	echo " No es un One"
@@ -176,9 +172,6 @@ fi
 # Necesario para Dream&Magic
 if [ "$DREAM" -eq 1 ]; then
 	mv  $REPACK/ota/system/app/Maps.apk $REPACK/ota/data/app/com.android.apps.maps.apk
-	cp  -r $REPACK/ota/system/media $REPACK/ota/data/
-	rm  -r $REPACK/ota/system/media
-else
 	echo " "
 	echo " No es un Dream/Magic"
 	echo " "
