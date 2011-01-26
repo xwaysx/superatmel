@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+    <!-- NOTE: if you change anything about this array, you must make the corresponding change
+         to the array DEFAULT_SMILEY_RES_IDS in MessageListItem.java and to default_smiley_names
+         below. -->
+    <string-array name="pref_mms_user_agent_entries">
+        <item>Android (Por defecto)</item>
+        <item>Nokia N95</item>
+        <item>iPhone (3.0)</item>
+        <item>BlackBerry 8800</item>
+        <item>Sony Ericsson W800i</item>
+        <item>SoftBank X01T</item>
+        <item>@string/pref_mms_custom_option</item>
+    </string-array>
+    <string-array name="pref_mms_user_agent_values">
+        <item>Por defecto</item>
+        <item>NokiaN95/11.0.026; Series60/3.1 Perfil/MIDP-2.0 Configuracion/CLDC-1.1</item>
+        <item>iPhoneOS/3.0 (7A341)</item>
+        <item>BlackBerry8800/4.2.1 Perfil/MIDP-2.0 Configuracion/CLDC-1.1 VendorID/100</item>
+        <item>SonyEricssonW800i/R1L</item>
+        <item>SoftBank/1.0/X01T/SCJ001</item>
+        <item>Personalizado</item>
+    </string-array>
+    <string-array name="pref_mms_message_font_size_entries">
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>18 (Por defecto)</item>
+        <item>20</item>
+  </string-array>
+</resources>

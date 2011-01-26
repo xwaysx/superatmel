@@ -422,11 +422,15 @@
     <string name="title_misc_category">Varios</string>
     <string name="title_sensor_rotation">Activa sensor de rotación</string>
     <string name="summary_sensor_rotation">Si está activado, girará basado en los ajustes del sistema</string>
+    <string name="title_data_font_size">Tamaño de fuente, información de contacto</string>
+    <string name="summary_data_font_size">Le permite elegir el tamaño de la fuente utilizada para mostrar información de contacto detallada (número de teléfono, correo electrónico, dirección, etc.)</string>
     
     <!-- Wysie: About strings -->    
     <string name="title_about">Acerca</string>
     <string name="title_about_name">Nombre</string>
+    <string name="summary_about_name">WyContacts GingerBread</string>
     <string name="title_about_version">Version</string>
+    <string name="summary_about_version">1.4</string>
     <string name="title_about_credits">Creditos</string>
     <string name="summary_about_credits">ChainsDD, geesun, niuchl, rac2030 and the rest of XDA, y ahora HTC Mania! :)</string>
 </resources>

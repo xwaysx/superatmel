@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Extra Settings: -->
+    <string name="pref_extra_settings">Ajustes extras</string>
+
+    <!-- Back to all threads -->
+    <string name="pref_title_mms_back_to_all_threads">Volver a todos los temas</string>
+    <string name="pref_summary_mms_back_to_all_threads">Siempre vuelve a todos los temas, cuando se pulsa el botón Atrás</string>
+
+    <!-- Toggle setting for enable/disable Black Background -->
+    <string name="pref_title_mms_black_background">Fondo Negro</string>
+    <string name="pref_summary_mms_black_background">Activar / desactivar fondo negro\n(Reinicia Mms)</string>
+
+    <!-- Custom user-agent -->
+    <string name="pref_mms_custom_option">Personalizado</string>
+    <string name="pref_title_mms_user_agent">Agente personalizado</string>
+    <string name="pref_summary_mms_user_agent">Usa el teléfono como un modelo diferente para enviar MMS</string>
+    <string name="pref_mms_user_agent_custom_set">Agente de usuario personalizado establece en:\n</string>
+
+    <!-- Full timestamps -->
+    <string name="pref_title_mms_full_timestamp">Marcas de tiempo completo</string>
+    <string name="pref_summary_mms_full_timestamp">Activar para mostrar la fecha y la hora en el mensaje</string>
+
+    <!-- Which timestamps -->
+    <string name="pref_title_mms_use_sent_timestamp">Usar marcas de tiempo originales</string>
+    <string name="pref_summary_mms_use_sent_timestamp">Muestra y almacena fecha de envio y entrega</string>
+
+    <!-- Only mobile numbers -->
+    <string name="pref_title_only_mobile_numbers">Sólo los números móviles</string>
+    <string name="pref_summary_only_mobile_numbers">Activar para mostrar sólo los números de móviles en el campo de destinatario</string>
+
+    <!-- Email address completion -->
+    <string name="pref_title_mms_email_addr_completion">Correo electrónico auto completa dirección</string>
+    <string name="pref_summary_mms_email_addr_completion">Activar / desactivar auto completar correo electrónico del campo de destinatario</string>
+
+    <!-- Message Font size -->
+    <string name="pref_title_mms_message_font_size">Tamaño de fuente del mensaje</string>
+    <string name="pref_summary_mms_message_font_size">Escoje el tamaño de fuente para el mensaje</string>
+    <string name="pref_dialogtitle_mms_message_font_size">Selecciona tamaño</string>
+
+    <!-- Change Vibrate pattern/method for message notification -->
+    <string name="pref_title_mms_notification_vibrate_settings">Ajustes de vibración</string>
+    <string name="pref_title_mms_notification_vibrate_pattern">Patrón de vibración</string>
+    <string name="pref_summary_mms_notification_vibrate_pattern">Cambia patrón de vibración</string>
+    <string name="pref_title_mms_notification_vibrate_call">Vibra al recibir una llamada</string>
+    <string name="pref_summary_mms_notification_vibrate_call">Permite que vibren durante una llamada</string>
+    <string name="pref_title_mms_notification_vibrate_custom">Personalizar patrón de vibración</string>
+    <string name="pref_text_mms_notification_vibrate_custom">FFormato de apagado / encendido en milisegundos: apagado, encendido, apagado, encendido, ...</string>
+
+    <!-- Send on enter -->
+    <string name="pref_title_mms_send_on_enter">Envia al presionar Intro</string>
+    <string name="pref_summary_mms_send_on_enter">Activar / desactivar enviar el mensaje cuando presiona la tecla Intro</string>
+
+    <!-- Setting item for folder to save MMS Attachments to -->
+    <string name="pref_title_save_location">Carpeta para guardar archivos adjuntos</string>
+
+</resources>
+

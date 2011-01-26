@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Setting title for setting alarm time limit -->
+    <string name="alarm_limit_title">Duración máxima de la alarma</string>
+
+    <!-- Entries listed in the ListPreference when invoking the max alarm duration
+         preference. -->
+    <string-array name="alarm_limit_entries">
+      <item>5 minutos</item>
+      <item>15 minutos</item>
+      <item>30 minutos</item>
+      <item>60 minutos</item>
+      <item>90 minutos</item>
+      <item>120 minutos</item>
+      <item>Infinito</item>
+    </string-array>
+
+    <!-- Setting title for setting alarm time limit -->
+    <string name="screensaver_timeout_title">Tiempo de espera, Screensaver</string>
+
+    <!-- Entries listed in the ListPreference when invoking the max alarm duration
+         preference. -->
+    <string-array name="screensaver_timeout_entries">
+      <item>1 minuto</item>
+      <item>5 minutos</item>
+      <item>10 minutos</item>
+      <item>15 minutos</item>
+      <item>30 minutos</item>
+      <item>60 minutos</item>
+    </string-array>
+
+    <!-- Values that are retrieved from the ListPreference. These must match
+         the alarm_limit_entries above. -->
+    <string-array name="screensaver_timeout_values">
+      <item>1</item>
+      <item>5</item>
+      <item>10</item>
+      <item>15</item>
+      <item>30</item>
+      <item>60</item>
+    </string-array>
+
+    <!-- Setting title for screensaver time color picker general title-->
+    <string name="color_picker">Color de hora</string>
+
+    <!-- Setting title for screensaver time color picker -->
+    <string name="color_picker_title">Color de hora (Screensaver)</string>
+
+    <!-- Setting title for screensaver time color picker -->
+    <string name="color_picker_summary">Cambia el color de la hora usado en modo screensaver</string>
+
+    <!-- Sample time used in color picker -->
+    <string name="color_picker_sample">11:45</string>
+
+    <!-- Labels for colors in color picker -->
+    <string name="color_picker_alpha">Transparencia (Solo atenuado)</string>
+    <string name="color_picker_red">Rojo</string>
+    <string name="color_picker_green">Verde</string>
+    <string name="color_picker_blue">Azul</string>
+
+    <!-- Settings strings for dual-mode button -->
+    <string name="use_dual_mode_button">Modo-Dual snooze</string>
+    <string name="use_dual_mode_button_on">Mantenga pulsado el botón de snooze para desactivar la alarma</string>
+    <string name="use_dual_mode_button_off">Separa snooze y botón de repetición</string>
+
+</resources>
