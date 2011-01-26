@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES +=  \
 #	vendor/superatmel/prebuilt/dream_sapphire/system/lib/modules/wlan.ko:system/lib/modules/wlan.ko
 
 PRODUCT_LOCALES := \
-    ca_ES \
     es_ES \
+    ca_ES \
     en_US \
     de_DE \
     eu_ES \
