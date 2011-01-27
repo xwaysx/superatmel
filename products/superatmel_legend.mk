@@ -35,7 +35,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/legend
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-Legend-SBC-2.2
+    ro.modversion=SuperGinger-ST@-Legend-2.2
 
 # Copy specific prebuilt files
 #

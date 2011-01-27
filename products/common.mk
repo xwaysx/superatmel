@@ -30,10 +30,11 @@ PRODUCT_PACKAGES += \
     openvpn \
     SpareParts2 \
     Parts \
-    DSPManager \
     libcyanogen-dsp \
     CMPartsHelper \
     Wallpapers \
+
+#    DSPManager \
 
 # Activa Voip
 PRODUCT_COPY_FILES += \

@@ -39,7 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.dexopt-data-only=1
 #
 
     PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-One-1
+    ro.modversion=SuperGinger-One-ST@-2.2
 
 # Copy DS specific prebuilt files
 #
