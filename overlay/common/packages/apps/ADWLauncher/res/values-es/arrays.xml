@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+       <string-array name="deletezone_entries">
+                <item>Ninguno</item>
+                <item>Arriba</item>
+                <item>Abajo</item>
+                <item>Arriba (Comienzo de pantalla)</item>
+                <item>Abajo (Comienzo de pantalla)</item>
+       </string-array>
+</resources>
