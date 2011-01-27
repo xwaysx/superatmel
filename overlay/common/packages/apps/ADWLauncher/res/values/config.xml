@@ -21,6 +21,7 @@
     <integer name="config_desktopBounce">30</integer>
     <integer name="config_desktopSpeed">650</integer>
     <integer name="config_drawer_color">0xFF000000</integer>
+    <string name="config_drawer_style">0</string>
     <integer name="config_drawerColumnsPortrait">3</integer>
     <integer name="config_drawerColumnsLandscape">4</integer>
     <integer name="config_zoomSpeed">450</integer>
