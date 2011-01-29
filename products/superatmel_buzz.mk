@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES +=  \
 WITH_WINDOWS_MEDIA := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperBler-MVZ-Wildfire-4
+    ro.modversion=SuperGinger-SBC-Wildfire-1
 
 PRODUCT_LOCALES := \
     es_ES \
