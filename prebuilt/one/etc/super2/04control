@@ -35,3 +35,5 @@ then
 echo "+++ Gracias a todos por elegir esta rom, espero que la disfruteis, y agradecimientos a todo el foro de Movilzona"
 echo "***** Con SupSetup"
 fi;
+sleep 80
+echo 0 > /sys/class/leds/white/blink;
