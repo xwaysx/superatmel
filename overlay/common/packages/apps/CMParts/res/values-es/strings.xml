@@ -375,6 +375,11 @@
     <string name="expanded_color_mask">Color de indicador</string>
     <string name="title_widget_picker">Botones de Widget</string>
     <string name="summary_widget_picker">Selecciona widgets</string>
+    <string name="title_widget_order">Ordena los widgets</string>
+    <string name="summary_widget_order">Ordena los widgets a petición</string>
+    <string name="title_toggle_media_play_pause">Reproductor: Play/Pausa</string>
+    <string name="title_toggle_media_previous">Reproductor: Pista anterior</string>
+    <string name="title_toggle_media_next">Reproductor: Pista siguiente</string>
     <string name="title_toggle_wifi">Wifi</string>
     <string name="title_toggle_bluetooth">Bluetooth</string>
     <string name="title_toggle_gps">GPS</string>
