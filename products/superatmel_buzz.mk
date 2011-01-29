@@ -26,7 +26,7 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superbler_wildfire_defconfig
 PRODUCT_PACKAGES += Torch
 
 # Extra Buzz overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlayazul/buzz
+PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/buzz
 
 # Extra RIL settings
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES +=  \
 WITH_WINDOWS_MEDIA := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Wildfire-1
+    ro.modversion=SuperGinger-ST@-Wildfire-2.2
 
 PRODUCT_LOCALES := \
     es_ES \

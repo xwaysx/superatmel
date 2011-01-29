@@ -25,7 +25,7 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superginger_hero_defconfig
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=SuperGinger-SBC-Hero-1 \
+	ro.modversion=SuperGinger-ST@-Hero-2.2 \
 
 # Copy specific prebuilt files
 #
