@@ -4,9 +4,6 @@
 
 busybox mount -o remount,rw /system;
 
-busybox ln -s /data/media /system/media;
-busybox rm -rf /system/media;
-
 #Control de SupSetup
 if [ -e /data/supsetup/sup.config ];
 then
