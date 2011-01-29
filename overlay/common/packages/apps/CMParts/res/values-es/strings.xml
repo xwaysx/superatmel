@@ -18,6 +18,8 @@
     <string name="interface_settings_summary_head">Ajustes de interface, overscrolli, efectos</string>
     <string name="lockscreen_settings_title_head">Lockscreen</string>
     <string name="lockscreen_settings_title_subhead">Ajustes de lockscreen</string>
+    <string name="pref_lockscreen_always_battery_title">Muestra el estado de la bateria en el lockscreen</string>
+    <string name="pref_lockscreen_always_battery_summary">Muestra siempre el estado en el lockscreen de la bateria</string>
     <string name="lockscreen_settings_summary_head">Gestos de lockscreen, stilo, opciones de desbloqueo</string>
     <string name="performance_settings_title_head">Rendimiento</string>
     <string name="performance_settings_title_subhead">Ajustes de rendimiento</string>
