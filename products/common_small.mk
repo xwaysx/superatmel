@@ -11,5 +11,5 @@ include vendor/superatmel/products/themes.mk
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Uprising.ogg \
-    ro.config.notification_sound=regulus.ogg
+    ro.config.notification_sound=Bubbles.ogg
 

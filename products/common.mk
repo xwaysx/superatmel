@@ -84,10 +84,9 @@ PRODUCT_COPY_FILES += \
 
 # Sonido para la rom
 PRODUCT_COPY_FILES += \
-	vendor/superatmel/prebuilt/common/media/audio/notifications/Zing.mp3:system/media/audio/notifications/Zing.mp3 \
+	vendor/superatmel/prebuilt/common/media/audio/notifications/Bubbles.ogg:system/media/audio/notifications/Bubbles.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/codeccall.ogg:system/media/audio/notifications/codecall.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/eXcitement.ogg:system/media/audio/notifications/eXcitement.ogg \
-	vendor/superatmel/prebuilt/common/media/audio/notifications/GOTMAIL.ogg:system/media/audio/notifications/GOTMAIL.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/icq_message.ogg:system/media/audio/notifications/icq_message.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/Spacious.ogg:system/media/audio/notifications/Spacious.ogg \
 	vendor/superatmel/prebuilt/common/media/audio/notifications/regulus.ogg:system/media/audio/notifications/regulus.ogg \
