@@ -15,7 +15,7 @@ PRODUCT_BRAND := htc_wwe
 PRODUCT_DEVICE := buzz
 PRODUCT_MODEL := HTC Wildfire
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=FRG83 BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
 
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
@@ -51,14 +51,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=SuperBler-MVZ-Wildfire-4
 
 PRODUCT_LOCALES := \
-    ca_ES \
     es_ES \
+    ca_ES \
     en_US \
     de_DE \
     eu_ES \
     fr_FR \
     it_IT \
     ru_RU \
-    ldpi
+    mdpi
 
 PRODUCT_DEFAULT_LANGUAGE := es_ES
