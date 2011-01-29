@@ -27,6 +27,12 @@ case "$TARGET_PRODUCT" in
 	*) MDPI=0
 esac
 
+# Discriminación de que dispositivos llevarán splash
+case "$TARGET_PRODUCT" in
+	superatmel_one) ONE=1 ;;
+	*) ONE=0
+esac
+
 set -e
 QUIET=1
 QFLAG=-q
@@ -109,9 +115,21 @@ then
     cd $TMPDIR/$NAME
     unzip -q $BASE/$1
     if [ "$MDPI" -eq 1 ]; then
+	echo " "
+	echo "Dispositivo MDPI"
 	 cp -rf $FRAME_IMG_MDPI res/drawable-mdpi/
-	 cp -rf $FRAME_ANIM res/anim/
+	if [ "$ONE" -eq 1 ]; then
+	echo " "
+	echo " Es un Geeksphone y no se copian animaciones"
+	echo " "
+		else
+	echo " "
+	echo "No es un Geeksphone y se copian animaciones"
+	cp -rf $FRAME_ANIM res/anim/
+	echo " "
+fi
     else
+	echo "Dispositivo HDPI"
 	 cp -rf $FRAME_IMG_HDPI res/drawable-hdpi/
 	 cp -rf $FRAME_ANIM res/anim/
     fi

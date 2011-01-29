@@ -160,9 +160,20 @@ esac
 
 # Necesario para GeeksPhone One
 if [ "$ONE" -eq 1 ]; then
+	echo " "
+	echo " Pasando archivos de system a data para conseguir espacio"
+	echo " "
 	cp -rf $SPLASH/one/splash.img $REPACK/ota/
-	rm -rf $REPACK/ota/data/extra/com.koushikdutta.rommanager.apk
+	rm -rf $REPACK/ota/system/app/RomManager.apk
+	rm -rf $REPACK/ota/system/app/Androidian.apk
+	rm -rf $REPACK/ota/system/app/Cyanbread.apk
+	rm -rf $REPACK/ota/system/app/ThemeChooser.apk
+	rm -rf $REPACK/ota/system/app/ThemeManager.apk
+	mv  $REPACK/ota/system/app/Gmail.apk $REPACK/ota/data/app/com.google.android.gm.apk
+	mv  $REPACK/ota/system/app/Street.apk $REPACK/ota/data/app/com.google.android.street.apk
+	mv  $REPACK/ota/system/app/YouTube.apk $REPACK/ota/data/app/com.google.android.youtube.apk
 	mv  $REPACK/ota/system/app/Maps.apk $REPACK/ota/data/app/com.android.apps.maps.apk
+	mv  $REPACK/ota/system/app/VoiceSearch.apk $REPACK/ota/data/app/com.google.android.voiceSearch.apk
 else
 	echo " "
 	echo " No es un One"
@@ -205,7 +216,7 @@ cd $REPACK/ota/system/app
 find ./ -name \*.apk | xargs  --max-args=1 --max-procs=`grep 'processor' /proc/cpuinfo | wc -l`  $OPTICHARGER
 )
 
-# Modificaciones de SuperBler
+# Modificaciones de SuperGinger
 rm -rf $REPACK/ota/system/app/CMStats.apk
 rm -rf $REPACK/ota/system/app/CMWallpapers.apk
 rm -rf $REPACK/ota/system/app/Protips.apk
