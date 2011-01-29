@@ -29,8 +29,9 @@ esac
 
 # Discriminación de que dispositivos llevarán splash
 case "$TARGET_PRODUCT" in
-	superatmel_one) ONE=1 ;;
-	*) ONE=0
+	superatmel_one) NOANIM=1 ;;
+        superatmel_hero) NOANIM=1 ;;
+	*) NOANIM=0
 esac
 
 set -e
@@ -118,13 +119,13 @@ then
 	echo " "
 	echo "Dispositivo MDPI"
 	 cp -rf $FRAME_IMG_MDPI res/drawable-mdpi/
-	if [ "$ONE" -eq 1 ]; then
+	if [ "$NOANIM" -eq 1 ]; then
 	echo " "
-	echo " Es un Geeksphone y no se copian animaciones"
+	echo " Es un dispositivo lento y no se copian animaciones"
 	echo " "
 		else
 	echo " "
-	echo "No es un Geeksphone y se copian animaciones"
+	echo "No es un dispositivo lento y se copian animaciones"
 	cp -rf $FRAME_ANIM res/anim/
 	echo " "
 fi
