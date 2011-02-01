@@ -33,8 +33,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     CMPartsHelper \
     Wallpapers \
-
-#    DSPManager \
+    DSPManager
 
 # Activa Voip
 PRODUCT_COPY_FILES += \
@@ -52,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/superatmel/prebuilt/common/etc/super/00inicio:system/etc/super/00inicio \
     vendor/superatmel/prebuilt/common/etc/super/01sysctl:system/etc/super/01sysctl \
     vendor/superatmel/prebuilt/common/etc/super/03firstboot:system/etc/super/03firstboot \
+    vendor/superatmel/prebuilt/common/etc/super/06mountdl:system/etc/super/06mountdl \
     vendor/superatmel/prebuilt/common/etc/super/20userinit:system/etc/super/20userinit \
     vendor/superatmel/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/superatmel/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
