@@ -20,7 +20,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE=geeksphone-one PRODUCT_NAME=geeks
 # Build kernel
 #PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
 #PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=one-kernel
-#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superatmel_defconfig
+#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superatmel2_defconfig
 
 # Include the Gallery
 PRODUCT_PACKAGES += \
@@ -39,7 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.dexopt-data-only=1
 #
 
     PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-One-ST@-2.2
+    ro.modversion=SuperGinger-One-ST@-2.4
 
 # Copy DS specific prebuilt files
 #

@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Set ro.modversion
 #
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-ST@-Nexus-2.2
+    ro.modversion=SuperGinger-ST@-Nexus-2.4
 
 #
 # Copy Passion specific prebuilt files
