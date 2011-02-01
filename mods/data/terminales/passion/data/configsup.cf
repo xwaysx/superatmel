@@ -7,7 +7,7 @@ SUPERATMEL="YES"
 
 # Default - Numeric & Size Values
 MAX_CPU="998400"
-MIN_CPU="245760"
+MIN_CPU="245000"
 SWAPPINESS="50"
 
 #mount_ep_system_write() {

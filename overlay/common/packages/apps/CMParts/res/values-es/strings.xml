@@ -523,4 +523,14 @@
     <string name="pref_lockscreen_disable_unlock_tab">Desactiva el deslizador de desbloque</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Nota: Necesitas habilitar trackball, tecla de menú, o un gesto de desbloqueo antes de que esta opción esté disponible</string>
     <string name="gestures_explain_create_screen">Elija una acción a realizar (o seleccione Abrir o sonido) y dibuje un gesto en la pantalla.\nNota que solo vertical (hacia arriba o hacia abajo) los gestos no son válidos..</string>
+
+    <!-- CPU Settings strings -->
+    <string name="cpu_settings_title">Ajustes de CPU</string>
+    <string name="cpu_title">Ajustes de CPU</string>
+    <string name="cpu_summary">Governor y ajustes</string>
+    <string name="cpu_governors_list">Lista de governors\nActualmente: %S</string>
+    <string name="cpu_min_freq">Frecuencias de CPU mínima\nActualmente: %s</string>
+    <string name="cpu_max_freq">Frecuencias de CPU máxima\nActualmente: %s</string>
+    <string name="cpu_set_on_boot">Activa en arranque</string>
+    <string name="cpu_set_on_boot_summary">Restaura ajustes de CPU en el arranque</string>
 </resources>
