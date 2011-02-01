@@ -1,9 +1,18 @@
 #!/system/bin/sh
 #
-# 
+# Load any extra modules
+
 MODULES="ipv6"
 
-for i in $MODULES;
+VER=`uname -r`
+if [ ! -d /system/lib/modules/$VER ]
+then
+    exit 0
+fi
+
+for i in $MODULES
 do
-    modprobe $i;
+    modprobe $i >/dev/null 2>&1
 done
+
+exit 0
