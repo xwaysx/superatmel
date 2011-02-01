@@ -27,6 +27,12 @@ case "$TARGET_PRODUCT" in
 	*) MDPI=0
 esac
 
+case "$TARGET_PRODUCT" in
+	superatmel_one) BATT=1 ;;
+	superatmel_passion) BATT=1 ;;
+	*) BATT=0
+esac
+
 # Discriminación de que dispositivos llevarán splash
 case "$TARGET_PRODUCT" in
 	superatmel_one) NOANIM=1 ;;
@@ -41,6 +47,8 @@ BASE=`pwd`
 TMPDIR=/tmp/opticharge-$$
 FRAME_IMG_MDPI=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi/*
 FRAME_IMG_HDPI=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_hdpi/*
+FRAME_IMG_MDPI_BATTERY=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi_battery/*
+FRAME_IMG_HDPI_BATTERY=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_hdpi_battery/*
 FRAME_ANIM=$ANDROID_BUILD_TOP/vendor/superatmel/mods/anim/*
 FRAME_IMG_MDPI_ONE=$ANDROID_BUILD_TOP/vendor/superatmel/mods/frame_mdpi_one/*
 
@@ -119,6 +127,13 @@ then
 	echo " "
 	echo "Dispositivo MDPI"
 	 cp -rf $FRAME_IMG_MDPI res/drawable-mdpi/
+    if [ "$BATT" -eq 1 ]; then
+	echo " "
+	echo "Con bateria circular"
+	 cp -rf $FRAME_IMG_MDPI_BATTERY res/drawable-mdpi/
+    else
+	echo "Con bateria original"
+    fi
 	if [ "$NOANIM" -eq 1 ]; then
 	echo " "
 	echo " Es un dispositivo lento y no se copian animaciones"
@@ -133,7 +148,14 @@ fi
 	echo "Dispositivo HDPI"
 	 cp -rf $FRAME_IMG_HDPI res/drawable-hdpi/
 	 cp -rf $FRAME_ANIM res/anim/
+    if [ "$BATT" -eq 1 ]; then
+	echo " "
+	echo "Con bateria circular"
+	 cp -rf $FRAME_IMG_HDPI_BATTERY res/drawable-hdpi/
+    else
+	echo "Con bateria original"
     fi
+fi
 
 case "$TARGET_PRODUCT" in
 	superatmel_one) cp -rf $FRAME_IMG_MDPI_ONE res/ ;;
