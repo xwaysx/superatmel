@@ -41,25 +41,25 @@ fi
 
 echo "Setting read-write /system overlay..."
 
-SD=`grep ext[23] /proc/mounts|head -n1|awk '{print $2}'`
+#SD=`grep ext[23] /proc/mounts|head -n1|awk '{print $2}'`
 RODIR=/data/sysro
 COUNT=0
 DOT=.
 
-if [ -n "$SD" ]; then
-	RWDIR=${SD}/sysrw
-else
-	while [ ! -e /dev/block/mmcblk0p1 ]; do
-		echo $DOT
-		DOT=${DOT}.
-		sleep 1
-		COUNT=$((COUNT+1))
-		if [ "$COUNT" -ge 5 ]; then
-			echo "No SD card present or SD card too slow, using /data for writing..."
+#if [ -n "$SD" ]; then
+#	RWDIR=${SD}/sysrw
+#else
+#	while [ ! -e /dev/block/mmcblk0p1 ]; do
+#		echo $DOT
+#		DOT=${DOT}.
+#		sleep 1
+#		COUNT=$((COUNT+1))
+#		if [ "$COUNT" -ge 5 ]; then
+#			echo "No SD card present or SD card too slow, using /data for writing..."
 			NOSD=yes
-			break
-		fi
-	done
+#			break
+#		fi
+#	done
 	if [ -z "$NOSD" ]; then
 		DEV=`fdisk -l /dev/block/mmcblk0|grep Linux|head -n1|awk '{print $1}'`
 		if [ -n "$DEV" ]; then

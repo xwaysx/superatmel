@@ -529,7 +529,7 @@
     <string name="cpu_title">Ajustes de CPU</string>
     <string name="cpu_summary">Governor y ajustes</string>
     <string name="cpu_governors_title">Lista de governors</string>
-    <string name="cpu_governors_summary">Lista de governors\nActualmente\nActualmente seleccionado: %S</string>
+    <string name="cpu_governors_summary">Lista de governors\nActualmente: %S</string>
     <string name="cpu_min_freq_title">Frecuencia mínima de CPU</string>
     <string name="cpu_min_freq_summary">Frecuencia mínima de CPU\nActualmente: %s</string>
     <string name="cpu_max_freq_title">Frecuencia máxima de CPU</string>

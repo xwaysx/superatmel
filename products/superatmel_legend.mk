@@ -20,9 +20,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_legend BUILD_ID=GRH55 BUILD_DIS
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/superatmel/prelink-linux-arm-msm722x.map
 
 #Build kernel
-PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
-PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-legend2
-PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superatmel_legend_defconfig
+#PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
+#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-legend2
+#PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superatmel_legend_defconfig
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=$(TOP)/vendor/superatmel/prebuilt/kernels/legend/kernel
 
@@ -35,7 +35,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/legend
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-ST@-Legend-2.2
+    ro.modversion=SuperGinger-ST@-Legend-2.6
 
 # Copy specific prebuilt files
 #

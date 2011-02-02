@@ -19,8 +19,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRF91 BUILD_DISPLAY_ID=GRH78C PRODUCT_N
 
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=
-PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=kernel-msm
-PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=cyanogen_bravo_defconfig
+PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_DIR=cm-kernel
+PRODUCT_SPECIFIC_DEFINES += TARGET_KERNEL_CONFIG=superatmel_bravo_defconfig
 
 # Incluye aplicaciones
 PRODUCT_PACKAGES += FM \
@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += FM \
    Torch
 
 # Broadcom FM radio
-$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+$(call inherit-product, vendor/superatmel/products/bcm_fm_radio.mk)
 
 # Extra Passion overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/superatmel/overlay/bravo
@@ -44,29 +44,32 @@ WITH_WINDOWS_MEDIA := true
 
 # Set ro.modversion
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=SuperGinger-SBC-Desire-2.1
+    ro.modversion=SuperGinger-ST@-Desire-2.6
 
 #
 # Copy Passion specific prebuilt files
 #
 PRODUCT_COPY_FILES +=  \
 	vendor/superatmel/prebuilt/bravo/etc/super/04modulos:system/etc/super/04modulos \
-	vendor/superatmel/prebuilt/bravo/etc/super2/00unionfs:system/etc/super2/00unionfs \
 	vendor/superatmel/prebuilt/bravo/etc/super2/01launcher:system/etc/super2/01launcher \
 	vendor/superatmel/prebuilt/bravo/etc/super2/02permisos:system/etc/super2/02permisos \
 	vendor/superatmel/prebuilt/bravo/etc/super2/03gps:system/etc/super2/03gps \
-	vendor/superatmel/prebuilt/bravo/etc/super2/04control:system/etc/super2/04control \
-	vendor/superatmel/prebuilt/bravo/xbin/unionfs:system/xbin/unionfs \
-	vendor/superatmel/prebuilt/bravo/xbin/busybox2:system/xbin/busybox2
+	vendor/superatmel/prebuilt/bravo/etc/super2/04control:system/etc/super2/04control
 
-PRODUCT_LOCALES := \
-    ca_ES \
-    es_ES \
-    en_US \
-    de_DE \
-    eu_ES \
-    fr_FR \
-    it_IT \
-    hdpi
+#	vendor/superatmel/prebuilt/bravo/etc/super2/00unionfs:system/etc/super2/00unionfs \
+#	vendor/superatmel/prebuilt/bravo/xbin/unionfs:system/xbin/unionfs \
+#	vendor/superatmel/prebuilt/bravo/xbin/busybox2:system/xbin/busybox2
+
+
+
+#PRODUCT_LOCALES := \
+ #   ca_ES \
+ #   es_ES \
+ #   en_US \
+ #   de_DE \
+ #   eu_ES \
+ #   fr_FR \
+ #   it_IT \
+ #   hdpi
 
 PRODUCT_DEFAULT_LANGUAGE := es_ES

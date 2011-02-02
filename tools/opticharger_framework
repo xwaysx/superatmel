@@ -29,7 +29,7 @@ esac
 
 case "$TARGET_PRODUCT" in
 	superatmel_one) BATT=1 ;;
-	superatmel_passion) BATT=1 ;;
+	superatmel_passio) BATT=1 ;;
 	*) BATT=0
 esac
 

@@ -8,9 +8,9 @@ busybox mount -o remount,rw /system
 if [ -e /data/supsetup/sup.config ];
 then
     echo "+++ Restaurando el backup del SupSetup";
- 		busybox cp -a /data/supsetup/sup.config /system/bin;
-		busybox rm -f /data/supsetup/sup.config;
-		else
+	busybox cp -a /data/supsetup/sup.config /system/bin;
+	busybox rm -f /data/supsetup/sup.config;
+else
     echo "+++ No existe backup de SupSetup"
 fi;
 
