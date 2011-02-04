@@ -20,6 +20,7 @@ MDPI=0
 G2D=0
 G3D=0
 ONE=0
+BRAVO=0
 DREAM=0
 BATT=0
 CONTROLGALLERY=$OUT/system/app/
@@ -56,9 +57,6 @@ esac
 # Discriminación de que dispositivos llevarán Gallery3D y cuales no
 case "$TARGET_PRODUCT" in
 	superatmel_buzz) G3D=1 ;;
-	superatmel_bravo) G3D=1 ;;
-	superatmel_passion) G3D=1 ;;
-	superatmel_desire) G3D=1 ;;
 	superatmel_hero) G3D=1 ;;
 	superatmel_z71) G3D=1 ;;
 	*) G3D=0
@@ -75,6 +73,12 @@ esac
 case "$TARGET_PRODUCT" in
 	superatmel_one) ONE=1 ;;
 	*) ONE=0
+esac
+
+# Discriminación de que dispositivos llevarán control extra de apps por falta de espacio en cache
+case "$TARGET_PRODUCT" in
+	superatmel_bravo) BRAVO=1 ;;
+	*) BRAVO=0
 esac
 
 # Discriminación de que dispositivos llevan control especial
@@ -178,6 +182,28 @@ if [ "$ONE" -eq 1 ]; then
 else
 	echo " "
 	echo " No es un One"
+	echo " "
+fi
+
+# Necesario para Desire
+if [ "$BRAVO" -eq 1 ]; then
+	echo " "
+	echo " Es una Desire, por la tanto, "
+	echo " "
+	echo " pasamos archivos de system a data para conseguir espacio en /cache"
+	echo " "
+	mv  $REPACK/ota/system/app/Gmail.apk $REPACK/ota/data/app/com.google.android.gm.apk
+	mv  $REPACK/ota/system/app/Maps.apk $REPACK/ota/data/app/com.android.apps.maps.apk
+	mv  $REPACK/ota/system/app/VoiceSearch.apk $REPACK/ota/data/app/com.google.android.voiceSearch.apk
+	mv  $REPACK/ota/system/app/Street.apk $REPACK/ota/data/app/com.google.android.street.apk
+	mv  $REPACK/ota/system/app/YouTube.apk $REPACK/ota/data/app/com.google.android.youtube.apk
+	mv  $REPACK/ota/system/app/RomManager.apk $REPACK/ota/data/app/com.koushikdutta.rommanager.apk
+	mv  $REPACK/ota/system/app/PassionQuickOffice.apk $REPACK/ota/data/app/PassionQuickOffice.apk
+
+
+else
+	echo " "
+	echo " No es una Desire"
 	echo " "
 fi
 
