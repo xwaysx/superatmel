@@ -82,7 +82,7 @@ DOT=.
 		RWDIR=/data/sysrw
 		MTOPTS="xino=/dev/shm/.aufs.xino,dirs=${RWDIR}:${RODIR}=ro"
 	fi
-fi 
+ 
 
 [ -z "$MTOPTS" ] && MTOPTS="dirs=${RWDIR}:${RODIR}=ro"
 [ -d "$RWDIR" ] || mkdir $RWDIR
